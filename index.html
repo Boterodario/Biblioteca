@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Biblioteca</h1>
+    </header>
+
+    <main>
+        <section id="libros">
+            <h2>Gestión de Libros</h2>
+            <input type="text" id="nombreLibro" placeholder="Nombre del libro">
+            <input type="text" id="autorLibro" placeholder="Autor del libro">
+            <button onclick="agregarLibro()">Agregar Libro</button>
+
+            <h3>Lista de Libros</h3>
+            <ul id="listaLibros"></ul>
+        </section>
+
+        <section id="usuarios">
+            <h2>Gestión de Usuarios</h2>
+            <input type="text" id="nombreUsuario" placeholder="Nombre del usuario">
+            <button onclick="agregarUsuario()">Agregar Usuario</button>
+
+            <h3>Lista de Usuarios</h3>
+            <ul id="listaUsuarios"></ul>
+        </section>
+
+        <section id="prestamos">
+            <h2>Préstamos</h2>
+            <select id="usuarioSelect">
+                <option value="">Seleccionar Usuario</option>
+            </select>
+
+            <select id="libroSelect">
+                <option value="">Seleccionar Libro</option>
+            </select>
+            <button onclick="prestarLibro()">Prestar Libro</button>
+
+            <h3>Libros Prestados</h3>
+            <ul id="listaPrestamos"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
